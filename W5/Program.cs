@@ -75,7 +75,21 @@
             dynamic dynRectangle = new Rectangle(3.0, 4.0);
             Console.WriteLine($"Dynamic Circle Area: {dynCircle.Area()}"); // Output: Dynamic Circle Area: 12.566370614359172
             Console.WriteLine($"Dynamic Rectangle Area: {dynRectangle.Area()}"); // Output: Dynamic Rectangle Area: 12.0
-            
+
+            // example of upcasting and downcasting
+            Shape shape1 = new Circle(5.0); // Upcasting
+            Console.WriteLine($"Upcasting Circle Area: {shape1.Area()}"); // Output: Upcasting Circle Area: 78.53981633974483
+
+            // Downcasting
+            if (shape1 is Circle circleShape1)
+            {
+                Console.WriteLine($"Downcasting Circle Area: {circleShape1.Area()}"); // Output: Downcasting Circle Area: 78.53981633974483
+            }
+            else
+            {
+                Console.WriteLine("Downcasting failed.");
+            }
+
 
         }
     }
