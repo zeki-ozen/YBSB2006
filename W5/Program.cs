@@ -4,6 +4,24 @@
     {
         static void Main(string[] args)
         {
+            /*
+            var price = 100;
+            price = "Zeki";
+
+            object price2 = "Zeki";
+            price2 = 100;
+
+            dynamic price3 = "Zeki";
+            price3 = 100;
+            */
+
+            /*
+            string s1 = "Hello ";
+            string s2 = "World";
+            string s3 = s1  % s2;
+            */
+
+
             Console.WriteLine("VAT Calculator Examples:");
             // Creating a VAT_Calculator instance
             VAT_Calculator calculator = new VAT_Calculator();
@@ -74,8 +92,11 @@
             dynamic dynCircle = new InterfaceCircle(2.0);
             dynamic dynRectangle = new Rectangle(3.0, 4.0);
             Console.WriteLine($"Dynamic Circle Area: {dynCircle.Area()}"); // Output: Dynamic Circle Area: 12.566370614359172
-            Console.WriteLine($"Dynamic Rectangle Area: {dynRectangle.Area()}"); // Output: Dynamic Rectangle Area: 12.0
+            Console.WriteLine($"Dynamic Rectangle Area: {dynRectangle.Area()}"); // Output: Dynamic Rectangle Area: 12.0            // İçi dolu (bodied) abstract metot örneğini çalıştır
+            Console.WriteLine("\nİçi Dolu (Bodied) Abstract Metot Örneği:");
+            AbstractBodyOrnek.Calistir();
 
+            /*
             // example of upcasting and downcasting
             Shape shape1 = new Circle(5.0); // Upcasting
             Console.WriteLine($"Upcasting Circle Area: {shape1.Area()}"); // Output: Upcasting Circle Area: 78.53981633974483
@@ -89,7 +110,12 @@
             {
                 Console.WriteLine("Downcasting failed.");
             }
+            */
 
+
+
+            
+           
 
         }
     }
