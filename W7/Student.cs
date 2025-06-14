@@ -36,6 +36,7 @@ namespace W7_OOP
             Console.WriteLine($"{this.studentName} takes an exam");
         }
 
+        // Destructor example
         ~Student() {
             Console.WriteLine("Student class destructed.");
             // mysql.Close();
